@@ -1,0 +1,11 @@
+@utility button {
+    @apply px-4 py-2 bg-blue text-gray-white text-center rounded-md text-sm font-medium hover:bg-blue-dark focus-visible:bg-blue-dark;
+}
+
+@utility h1 {
+    @apply text-4xl lg:text-5xl xl:text-6xl leading-none font-bold;
+}
+
+@utility h2 {
+    @apply text-3xl lg:text-4xl leading-9 lg:leading-10 font-bold;
+}

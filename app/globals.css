@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-blue: rgba(0 102 204);
+  --color-blue-dark: rgb(0 68 153);
+  --color-blue-light: rgb(0 212 255);
+  --color-blue-lighter: rgb(219 234 254);
+
+  --color-light: rgb(249 250 251);
+
+  --color-gray: rgb(17 24 39);
+  --color-gray-light: rgb(156 163 175);
+  --color-gray-lighter: rgb(209 213 219);
+  --color-gray-white: rgb(248 250 252);
+  --color-gray-border: rgb(229 231 235);
+
+  --gradient-blue-dark: linear-gradient(to right, rgb(17, 24, 39), rgb(31, 41, 55));
+  --gradient-blue-light: linear-gradient(to right, rgb(0, 102, 204), rgb(51, 143, 255));
+  --gradient-gray-light: linear-gradient(to right bottom, rgb(248, 250, 252), rgb(243, 244, 246));
+
+  --text-color: rgb(75 85 99);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: var(--text-color);
+}
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  @apply font-sans;
+}
+
+.container {
+  @apply mx-auto px-4 lg:px-8;
+}
+
+button {
+  @apply cursor-pointer transition-all;
+}
+
+@import "./css/utilities.css";
+@import "./css/base.css";

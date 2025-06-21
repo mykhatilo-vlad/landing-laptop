@@ -1,0 +1,104 @@
+{
+    "meta": {
+        "title": "ASUS VivoBook 15 S OLED",
+        "description": "Experience the brilliance of OLED technology with stunning visuals, powerful performance, and sleek design in one premium laptop."
+    },
+    "buyUrl": "",
+    "header": {
+        "title": "VivoBook 15 S OLED"
+    },
+    "hero": {
+        "subtitle": "I am ready to sell it",
+        "heading": {
+            "main": "ASUS VivoBook 15",
+            "highlight": "S OLED"
+        },
+        "copy": "Experience the brilliance of OLED technology with stunning visuals, powerful performance, and sleek design in one premium laptop.",
+        "buttonLabel": "Shop Now",
+        "image": "./main.jpg"
+    },
+    "features": {
+        "heading": "Exceptional Features",
+        "desc": "Discover the advanced technology and premium features that make the VivoBook 15 S OLED the perfect choice for creators, professionals, and enthusiasts.",
+        "cards": [
+            {
+                "id": 0,
+                "icon": "monitor",
+                "title": "15.6\" OLED Display",
+                "copy": "Stunning 2.8K OLED touchscreen with 100% DCI-P3 color gamut and VESA DisplayHDR True Black 600 certification"
+            },
+            {
+                "id": 1,
+                "icon": "cpu",
+                "title": "AMD Ryzen 5 7535H (3.3GHz)",
+                "copy": "With Radeon Graphics."
+            },
+            {
+                "id": 2,
+                "icon": "hardDrive",
+                "title": "1TB PCIe SSD",
+                "copy": "Lightning-fast 1TB PCIe 4.0 NVMe SSD storage with up to 16GB for seamless multitasking"
+            },
+            {
+                "id": 3,
+                "icon": "battery",
+                "title": "All-Day Battery",
+                "copy": "Up to 9 hours of battery life with 90W fast charging - get 60% charge in just 49 minutes"
+            }
+        ]
+    },
+    "spec": {
+        "heading": "Technical Specifications",
+        "desc": "Powerful hardware designed for modern computing demands",
+        "rows": [
+            {
+                "id": 0,
+                "title": "Processor",
+                "info": "AMD Ryzen 5 7535H with Radeon Graphics (3.3GHz)"
+            },
+            {
+                "id": 1,
+                "title": "Display",
+                "info": "15.6\" OLED, 2880x1620 (16:9)"
+            },
+            {
+                "id": 2,
+                "title": "Memory",
+                "info": "16GB"
+            },
+            {
+                "id": 3,
+                "title": "Storage",
+                "info": "1TB M.2 NVME SSD"
+            },
+            {
+                "id": 4,
+                "title": "Operating System",
+                "info": "Windows 11 Home"
+            },
+            {
+                "id": 5,
+                "title": "Weight",
+                "info": "1.5 kg"
+            }
+        ]
+    },
+    "gallery": {
+        "heading": "VivoBook 15 S OLED Gallery",
+        "desc": "Explore every detail of the VivoBook 15 S OLED from multiple angles and see the premium design and craftsmanship up close.",
+        "photos": [
+            "other.jpg",
+            "all-sides.jpg",
+            "back.jpg",
+            "box.jpg",
+            "keyboard.jpg",
+            "white.jpg",
+            "spec.jpg"
+        ]
+    },
+    "cta": {
+        "heading": "Ready to Experience OLED Excellence?",
+        "copy": "Join thousands of satisfied customers who've upgraded to the VivoBook 15 S OLED. Premium performance, stunning visuals, and reliable build quality in one exceptional laptop.",
+        "buttonLabel": "Buy Now"
+    }
+}
