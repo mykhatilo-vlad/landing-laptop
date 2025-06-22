@@ -16,8 +16,10 @@ export const Hero = () => {
 
                     <div className="mt-8"><ButtonBuy className="text-lg lg:px-8">{hero.buttonLabel}</ButtonBuy></div>
                 </div>
-                <div className="">
-                    <img src={hero.image} alt="image" className="rounded-2xl shadow-2xl max-h-100" />
+                <div className="grid grid-cols-2 gap-4 items-center">
+                    {hero.image.map((src, index) => {
+                        return <img key={index} src={src} alt="image" className="rounded-2xl shadow-2xl" />
+                    })}
                 </div>
             </div>
         </section>

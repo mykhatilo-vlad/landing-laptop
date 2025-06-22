@@ -19,11 +19,22 @@ export const Gallery = () => {
                     <p className="text-xl leading-7 max-w-192 mx-auto">{gallery.desc}</p>
                 </div>
 
-                <div className="grid gap-6 grid-cols-[repeat(auto-fill,_minmax(18rem,_1fr))]">
+                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {gallery.photos.map((src, index) => {
+                        const classes: Record<number, string> = {
+                            0: 'sm:row-span-3',
+                            7: 'sm:col-start-1 sm:row-start-4 sm:row-span-2',
+                            8: 'sm:row-span-2',
+                            4: 'sm:col-start-2 lg:col-start-3',
+                            5: 'sm:col-start-2 lg:col-start-3',
+                            6: 'lg:col-start-2 lg:row-start-3'
+
+                        }
+
                         return (
-                            <button key={index} popoverTarget={popoverId} onClick={() => handleOpen(src)} className="transition-all hover:-translate-y-2 focus-visible:-translate-y-2">
-                                <img src={src} alt="gallery photo" className="rounded-lg shadow-lg object-cover" />
+                            <button key={index} data-index={index} popoverTarget={popoverId} onClick={() => handleOpen(src)} 
+                                className={`transition-all hover:-translate-y-2 focus-visible:-translate-y-2 ${classes[index] || ''}`}>
+                                <img src={src} alt="gallery photo" className="rounded-lg shadow-lg object-cover h-full" />
                             </button>
                         );
                     })}

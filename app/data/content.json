@@ -3,7 +3,7 @@
         "title": "ASUS VivoBook 15 S OLED",
         "description": "Experience the brilliance of OLED technology with stunning visuals, powerful performance, and sleek design in one premium laptop."
     },
-    "buyUrl": "",
+    "buyUrl": "https://www.olx.ua/d/uk/obyavlenie/asus-vivobook-s-15-oled-IDYkgF8.html",
     "header": {
         "title": "VivoBook 15 S OLED"
     },
@@ -15,7 +15,10 @@
         },
         "copy": "Experience the brilliance of OLED technology with stunning visuals, powerful performance, and sleek design in one premium laptop.",
         "buttonLabel": "Shop Now",
-        "image": "./main.jpg"
+        "image": [
+            "./main.jpg",
+            "./pretty.jpg"
+        ]
     },
     "features": {
         "heading": "Exceptional Features",
@@ -87,13 +90,20 @@
         "heading": "VivoBook 15 S OLED Gallery",
         "desc": "Explore every detail of the VivoBook 15 S OLED from multiple angles and see the premium design and craftsmanship up close.",
         "photos": [
-            "other.jpg",
-            "all-sides.jpg",
-            "back.jpg",
-            "box.jpg",
-            "keyboard.jpg",
-            "white.jpg",
-            "spec.jpg"
+           "./about.jpeg",
+           "./activation.jpeg",
+           "./back1.jpg",
+           "./back2.jpg",
+           "./box-laptop.jpg",
+           "./box.jpg",
+           "./keyboard1.jpg",
+           "./main.jpg",
+           "./pretty.jpg",
+           "./side1.jpg",
+           "./side2.jpg",
+           "./side3.jpg",
+           "./touchpad.jpg",
+           "./white.jpg"
         ]
     },
     "cta": {
