@@ -1,5 +1,7 @@
-import { header } from '../data/content.json';
+import content from '../data/content.json';
 import { ButtonBuy } from './buttons';
+
+const {header} = content;
 
 export default function Header() {
     return (

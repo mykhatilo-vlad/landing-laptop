@@ -1,5 +1,7 @@
 import { HTMLAttributes, FC } from 'react';
-import {buyUrl} from '../../data/content.json';
+import content from '../../data/content.json';
+
+const {buyUrl} = content;
 
 type ComponentProps = HTMLAttributes<HTMLAnchorElement>;
 

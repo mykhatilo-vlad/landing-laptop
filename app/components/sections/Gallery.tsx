@@ -1,7 +1,10 @@
 'use client';
 
-import { gallery } from '../../data/content.json';
+import content from '../../data/content.json';
 import { useState } from 'react';
+import { WrapInView } from '../WrapInView';
+
+const {gallery} = content;
 
 export const Gallery = () => {
     const popoverId = 'gallery-popover';
@@ -14,10 +17,10 @@ export const Gallery = () => {
     return (
         <section className="py-16 lg:py-24">
             <div className="container">
-                <div className="text-center mb-16">
+                <WrapInView as="div" classes={['opacity-0', 'translate-y-10']} className="text-center mb-16 duration-300">
                     <h2 className="text-gray mb-4">{gallery.heading}</h2>
                     <p className="text-xl leading-7 max-w-192 mx-auto">{gallery.desc}</p>
-                </div>
+                </WrapInView>
 
                 <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {gallery.photos.map((src, index) => {
@@ -28,14 +31,13 @@ export const Gallery = () => {
                             4: 'sm:col-start-2 lg:col-start-3',
                             5: 'sm:col-start-2 lg:col-start-3',
                             6: 'lg:col-start-2 lg:row-start-3'
-
                         }
 
                         return (
-                            <button key={index} data-index={index} popoverTarget={popoverId} onClick={() => handleOpen(src)} 
-                                className={`transition-all hover:-translate-y-2 focus-visible:-translate-y-2 ${classes[index] || ''}`}>
+                            <WrapInView as="button" classes={['opacity-0', 'translate-y-10']} key={index} popoverTarget={popoverId} onClick={() => handleOpen(src)} 
+                                className={`transition-all hover:-translate-y-2 focus-visible:-translate-y-2 duration-300 ${classes[index] || ''}`}>
                                 <img src={src} alt="gallery photo" className="rounded-lg shadow-lg object-cover h-full" />
-                            </button>
+                            </WrapInView>
                         );
                     })}
                 </div>
